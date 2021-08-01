@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    tools:context=".fragments.RegisterFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_mobile"
+        app:hintTextColor="@color/black"
+        android:background="@null"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/mobile_ET"
+            android:inputType="phone"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/name_ET"
+        style="@style/EditTextCustomMain"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout" />
+
+    <EditText
+        android:id="@+id/gender_ET"
+        style="@style/EditTextCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_gender"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_ET" />
+
+    <EditText
+        android:id="@+id/dob_ET"
+        style="@style/EditTextCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_dob"
+        android:drawableRight="@drawable/calender_image"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_ET" />
+
+    <EditText
+        android:id="@+id/address1_ET"
+        style="@style/EditTextCustomMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="50"
+        android:hint="@string/hint_address1"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob_ET" />
+
+    <EditText
+        android:id="@+id/address2_ET"
+        style="@style/EditTextCustom"
+        android:ems="10"
+        android:maxLength="50"
+        android:hint="@string/hint_address2"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address1_ET" />
+
+    <EditText
+        android:id="@+id/pin_code_ET"
+        style="@style/EditTextCustomMain"
+        android:ems="10"
+        android:hint="@string/hint_pin_code"
+        android:inputType="number"
+        android:maxLength="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address2_ET" />
+
+    <EditText
+        android:id="@+id/district_ET"
+        style="@style/EditTextCustom"
+        android:ems="10"
+        android:hint="@string/hint_district"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pin_code_ET" />
+
+    <EditText
+        android:id="@+id/state_ET"
+        style="@style/EditTextCustom"
+        android:ems="10"
+        android:hint="@string/hint_state"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/district_ET" />
+
+    <TextView
+        android:id="@+id/register_btn_TV"
+        style="@style/ButtonCustom"
+        android:text="@string/register_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/state_ET"
+        app:layout_constraintVertical_bias="0.912" />
+</androidx.constraintlayout.widget.ConstraintLayout>

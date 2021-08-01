@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+<!--    preferences-->
+    <string name="exit">Exit Alert!</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="sure_exit">Are you sure you want to exit?</string>
+
+    //ladning fragment
+    <string name="logo_txt">Logo</string>
+    <string name="main_description">Mobile app for use to list down multiple profiles in same registered user</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="continue_button">Continue</string>
+    <string name="landing_title">Landing screen</string>
+
+    <!--    register fragment-->
+    <string name="hint_name">Full Name *</string>
+    <string name="name">Name</string>
+    <string name="hint_gender">Gender *</string>
+    <string name="gender">Gender</string>
+    <string name="hint_dob">DOB *</string>
+    <string name="dob">DOB</string>
+    <string name="hint_address1">Address Line 1 *</string>
+    <string name="address1">Address 1</string>
+    <string name="hint_address2">Address Line 2</string>
+    <string name="address2">Address 2</string>
+    <string name="hint_pin_code">Pin Code*</string>
+    <string name="hint_district">District (auto-populate)</string>
+    <string name="hint_state">State (auto-populate)</string>
+    <string name="register_btn">Register</string>
+    <string name="number">Number</string>
+    <string name="district">District</string>
+    <string name="success">Success</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pincode">PinCode</string>
+    <string name="age">Age</string>
+<!--    validation of register-->
+    <string name="name_empty_error">Please enter name</string>
+    <string name="name_valid_error">It must contain four characters.</string>
+    <string name="address_empty_error">Please enter address</string>
+    <string name="address_valid_error">It must contain four characters.</string>
+    <string name="phone_empty_error">Please enter phone number</string>
+    <string name="phone_valid_error">It must contain ten digits.</string>
+    <string name="gender_empty_error">Please enter gender</string>
+    <string name="gender_valid_error">Please enter valid gender.</string>
+    <string name="pincode_empty_error">Please enter pincode.</string>
+    <string name="pincode_valid_error">Please enter valid pincode.</string>
+    <string name="dob_empty_error">Please enter dob.</string>
+    <string name="district_empty_error">Please enter district.</string>
+    <string name="state_empty_error">Please enter state.</string>
+    <string name="false_validation">Credentials enter not valid.</string>
+
+
+    <!--    weather fragment-->
+    <string name="weather_description">Show results here like (temp, temp min, temp max, humidity ,cloud etc.)</string>
+    <string name="hint_city">City</string>
+    <string name="hint_result_button">Show Results</string>
+    <string name="weather_title">Weather today</string>
+    <string name="check">Check</string>
+    <string name="temperature">Temperature : </string>
+    <string name="max_temperature">"\nMax Temperature : "</string>
+    <string name="min_temperature">"\nMin Temperature : "</string>
+    <string name="humidity">"\nHumidity : "</string>
+    <string name="clouds">"\nClouds : "</string>
+
+<!--    menu-->
+    <string name="my_profile">My profile</string>
+    <string name="logout">Logout</string>
+
+<!--    profile fragment-->
+    <string name="view_profile">View Profile</string>
+
+</resources>
